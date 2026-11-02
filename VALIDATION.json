@@ -1,0 +1,21 @@
+{
+  "schema": "r10.1-preserved-validation-v1",
+  "windows_sha256": "5f28a65e5655a55bd7d5139ea333a1c3450d78f56bc0384b3958d7447e725870",
+  "audio_assertions_passed": 375,
+  "golden_cases_byte_equal": 40,
+  "historical_PCM_hashes_equal": 24,
+  "complete_M5_byte_equal": true,
+  "source_tests": {
+    "total": 58,
+    "passed": 56,
+    "optional_host_integration_skipped": 2,
+    "failed": 0
+  },
+  "user_manual_confirmation": "r10.1 界面和试听全部通过",
+  "scope": "Inherited accepted evidence for unchanged r10.1 bytes; not new product execution in download-repository preparation.",
+  "other_Windows_machine_tested": false,
+  "new_camera_or_storage_card_tested": false,
+  "extra_cold_rebuild_executed": false,
+  "known_stress_case_status": "CA-M5-STRESS-01 remains unresolved; not retested",
+  "legal_clearance_claimed": false
+}

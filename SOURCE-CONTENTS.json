@@ -1,0 +1,301 @@
+{
+  "schema": "r10.1-public-download-source-coverage-v1",
+  "windows": {
+    "name": "Z50-Lab-Windows-Tools-r10.1-local-privacy-candidate.zip",
+    "bytes": 430722516,
+    "sha256": "5f28a65e5655a55bd7d5139ea333a1c3450d78f56bc0384b3958d7447e725870",
+    "members": 19650
+  },
+  "three_separate_source_assets": [
+    {
+      "name": "Corresponding-Source.zip",
+      "bytes": 1714673,
+      "sha256": "ed98ad2a728ab5117378e14ee413dbad470f260bb25f63548b086a3312f05154",
+      "identical_to_windows_member": true,
+      "recompressed": false
+    },
+    {
+      "name": "SoundTool-Corresponding-Source.zip",
+      "bytes": 70677,
+      "sha256": "0fccf14cba7ffb3bada927e9a4ff91d6e8bdd9fb68c2fa10bcaa1e0a6784600e",
+      "identical_to_windows_member": true,
+      "recompressed": false
+    },
+    {
+      "name": "FFmpeg-Corresponding-Source.zip",
+      "bytes": 58838001,
+      "sha256": "e6c5bf03afd446ea899a09dc2f796aa7f543bf048a8eb6cf2b8a4314aea28ee1",
+      "identical_to_windows_member": true,
+      "recompressed": false
+    }
+  ],
+  "three_source_zips_exhaust_all_windows_dependency_sources": false,
+  "python_and_tcl_tk": {
+    "runtime": {
+      "prefix": "SoundTool/runtime/",
+      "members": 927,
+      "uncompressed_bytes": 46220902
+    },
+    "runtime_lock": "SoundTool/dependency-materials/runtime-files.lock.json",
+    "runtime_927_hashes_verified": true,
+    "source_archives": [
+      {
+        "path": "SoundTool/dependency-materials/Third-Party-Source/Python/Python-3.14.10.tgz",
+        "bytes": 31671453,
+        "sha256": "9e4996c19ae5a3df31f10c37723661f71d3455d73bd005f79df7098e5cc13192",
+        "origin_url": "https://www.python.org/ftp/python/3.14.10/Python-3.14.10.tgz"
+      },
+      {
+        "path": "SoundTool/dependency-materials/Third-Party-Source/Python/SPDXRef-PACKAGE-bzip2.tar.gz",
+        "bytes": 818771,
+        "sha256": "ab8d1b0cc087c20d4c32c0e4fcf7d0c733a95da12cedc6d63b3f0a9af07427e2",
+        "origin_url": "https://github.com/python/cpython-source-deps/archive/refs/tags/bzip2-1.0.8.tar.gz"
+      },
+      {
+        "path": "SoundTool/dependency-materials/Third-Party-Source/Python/SPDXRef-PACKAGE-expat-2.9.0.tar.gz",
+        "bytes": 847314,
+        "sha256": "16afbb9cefead2aa278105cf27d9f597bde7fbf3dbb85015857ca7ca6a4e89ba",
+        "origin_url": "https://github.com/libexpat/libexpat/releases/download/R_2_9_0/expat-2.9.0.tar.gz"
+      },
+      {
+        "path": "SoundTool/dependency-materials/Third-Party-Source/Python/SPDXRef-PACKAGE-hacl-star-8ba599b2f6c9701b3dc961db895b0856a2210f76.zip",
+        "bytes": 13091579,
+        "sha256": "61e48893f37cb2280d106cefacf6fb5afe84edf625fec39572d0ee94e1018f26",
+        "origin_url": "https://github.com/hacl-star/hacl-star/archive/8ba599b2f6c9701b3dc961db895b0856a2210f76.zip"
+      },
+      {
+        "path": "SoundTool/dependency-materials/Third-Party-Source/Python/SPDXRef-PACKAGE-libffi.tar.gz",
+        "bytes": 1375889,
+        "sha256": "9d802681adfea27d84cae0487a785fb9caa925bdad44c401b364c59ab2b8edda",
+        "origin_url": "https://github.com/python/cpython-source-deps/archive/refs/tags/libffi-3.4.4.tar.gz"
+      },
+      {
+        "path": "SoundTool/dependency-materials/Third-Party-Source/Python/SPDXRef-PACKAGE-mpdecimal.tar.gz",
+        "bytes": 319629,
+        "sha256": "338fac3fb8cdd60f406b6326431338756f58a8af94229ffd9bf1e7c2b1ad71ca",
+        "origin_url": "https://github.com/python/cpython-source-deps/archive/refs/tags/mpdecimal-4.0.0.tar.gz"
+      },
+      {
+        "path": "SoundTool/dependency-materials/Third-Party-Source/Python/SPDXRef-PACKAGE-openssl.tar.gz",
+        "bytes": 53469014,
+        "sha256": "d6cf0d9a651f25fe506f6b3dc133a80b9b79a0bc565f570dcf8fdbd597551485",
+        "origin_url": "https://github.com/python/cpython-source-deps/archive/refs/tags/openssl-3.5.9.tar.gz"
+      },
+      {
+        "path": "SoundTool/dependency-materials/Third-Party-Source/Python/SPDXRef-PACKAGE-tcl.tar.gz",
+        "bytes": 11981353,
+        "sha256": "3ac2acd65ddaaac0b2b8df321b558419d21da20bf67ab39149b8248c85f0d214",
+        "origin_url": "https://github.com/python/cpython-source-deps/archive/refs/tags/tcl-9.0.4.0.tar.gz"
+      },
+      {
+        "path": "SoundTool/dependency-materials/Third-Party-Source/Python/SPDXRef-PACKAGE-xz.tar.gz",
+        "bytes": 1744796,
+        "sha256": "a15c168e39e87d750c3dc766edc7f19bdda57dacf01e509678467eace91ad282",
+        "origin_url": "https://github.com/python/cpython-source-deps/archive/refs/tags/xz-5.2.5.tar.gz"
+      },
+      {
+        "path": "SoundTool/dependency-materials/Third-Party-Source/Python/SPDXRef-PACKAGE-zlib-ng.tar.gz",
+        "bytes": 2415819,
+        "sha256": "00bbd88709bc416cb96160ab61d3e1c8f76e106799af7328d0fe434dc7dd5004",
+        "origin_url": "https://github.com/python/cpython-source-deps/archive/refs/tags/zlib-ng-2.2.4.tar.gz"
+      },
+      {
+        "path": "SoundTool/dependency-materials/Third-Party-Source/Python/SPDXRef-PACKAGE-zstd.tar.gz",
+        "bytes": 2440298,
+        "sha256": "f24b52470d12f466e9fa4fcc94e6c530625ada51d7b36de7fdc6ed7e6f499c8e",
+        "origin_url": "https://github.com/python/cpython-source-deps/archive/refs/tags/zstd-1.5.7.tar.gz"
+      },
+      {
+        "path": "SoundTool/dependency-materials/Third-Party-Source/Python/SPDXRef-PACKAGE-tk.tar.gz",
+        "bytes": 4645673,
+        "sha256": "66048966cfa88989333ff1632f454e10e9248516bb45efda7b4d2ae5a61642cb",
+        "origin_url": "https://github.com/python/cpython-source-deps/archive/refs/tags/tk-9.0.4.1.tar.gz"
+      },
+      {
+        "path": "SoundTool/dependency-materials/Third-Party-Source/Python/SPDXRef-PACKAGE-sqlite.tar.gz",
+        "bytes": 2845090,
+        "sha256": "fb5ab81f27612b0a7b4861ba655906c76dc85ee969e7a4905d2075aff931e8d0",
+        "origin_url": "https://github.com/python/cpython-source-deps/archive/refs/tags/sqlite-3.50.4.0.tar.gz"
+      }
+    ],
+    "source_lock": "SoundTool/dependency-materials/SOURCE.lock.json",
+    "provenance": "SoundTool/dependency-materials/build-info/Python-runtime-provenance.json",
+    "license_groups": [
+      {
+        "prefix": "SoundTool/dependency-materials/licenses/",
+        "members": 109,
+        "uncompressed_bytes": 607421
+      }
+    ],
+    "license_subdirectories": [
+      "Python",
+      "Python-Windows",
+      "Python-components",
+      "Python-pip-bundled"
+    ],
+    "windows_original_license": "SoundTool/licenses/release-preflight/r6-python-ms/CPython-3.14.10-WINDOWS-LICENSE.txt"
+  },
+  "builder_zig": {
+    "full_distribution": {
+      "prefix": "PublicBuildM5/deps/zig/",
+      "members": 18105,
+      "uncompressed_bytes": 348607584
+    },
+    "full_lib_source": {
+      "prefix": "PublicBuildM5/deps/zig/lib/",
+      "members": 18101,
+      "uncompressed_bytes": 170968680
+    },
+    "bootstrap_source_and_signature": [
+      {
+        "path": "Third-Party-Source/zig-bootstrap-0.15.2.tar.xz",
+        "bytes": 52718988,
+        "sha256": "a6845459501df3c3264ebc587b02a7094ad14f4f3f7287c48f04457e784d0d85"
+      },
+      {
+        "path": "Third-Party-Source/zig-bootstrap-0.15.2.tar.xz.minisig",
+        "bytes": 322,
+        "sha256": "7c2a516f92e43f25b936e102f3cacb730534f5cc63caee86cb4be183b3727a32"
+      }
+    ],
+    "original_notices": {
+      "prefix": "Third-Party-Notices/Zig-0.15.2/",
+      "members": 56,
+      "uncompressed_bytes": 7184911
+    },
+    "source_scope_record": "Third-Party-Notices/Zig-0.15.2/SOURCE-DELIVERY.json"
+  },
+  "ffmpeg014": {
+    "source_delivery": {
+      "prefix": "SoundTool/dependency-materials/FFmpeg-selfbuild/",
+      "members": 120,
+      "uncompressed_bytes": 66327165
+    },
+    "physical_archives": [
+      {
+        "path": "SoundTool/dependency-materials/FFmpeg-selfbuild/archives/FFmpeg-946fcce07b.tar.gz",
+        "bytes": 17320345,
+        "sha256": "86f82e82456005881d1b97e9ce02f8a40bf2d181c8c958f8ae736886fdba2a34"
+      },
+      {
+        "path": "SoundTool/dependency-materials/FFmpeg-selfbuild/archives/nasm-2.16.03.tar.gz",
+        "bytes": 1688160,
+        "sha256": "5bc940dd8a4245686976a8f7e96ba9340a0915f2d5b88356874890e207bdb581"
+      },
+      {
+        "path": "SoundTool/dependency-materials/FFmpeg-selfbuild/archives/zig-0.15.2-runtime-source.zip",
+        "bytes": 36908319,
+        "sha256": "347fff32488479d807f0d14f665d2488442bbc63d090a17ab2d0b62e40e909a8"
+      },
+      {
+        "path": "SoundTool/dependency-materials/FFmpeg-selfbuild/archives/zlib-1.3.2.tar.gz",
+        "bytes": 1502830,
+        "sha256": "bb329a0a2cd0274d05519d61c667c062e06990d72e125ee2dfa8de64f0119d16"
+      }
+    ],
+    "actual_identity_map": "SoundTool/dependency-materials/FFmpeg-selfbuild/BINARY-SOURCE-MAP.json",
+    "editable_preferred_recipe": "FFmpeg-selfbuild/build/rebuild-neutral.py",
+    "steps": "FFmpeg-selfbuild/build/BUILDING-NEUTRAL.md",
+    "host_acquisition": "FFmpeg-selfbuild/host-tools/ACQUISITION.json",
+    "second_cold_build_executed": false
+  },
+  "other_original_notice_groups": [
+    {
+      "prefix": "PublicBuildM5/licenses/",
+      "members": 143,
+      "uncompressed_bytes": 8866799
+    },
+    {
+      "prefix": "Third-Party-Notices/Zig-0.15.2/",
+      "members": 56,
+      "uncompressed_bytes": 7184911
+    },
+    {
+      "prefix": "SoundTool/licenses/",
+      "members": 1,
+      "uncompressed_bytes": 35407
+    },
+    {
+      "prefix": "SoundTool/project-licenses/",
+      "members": 4,
+      "uncompressed_bytes": 44671
+    },
+    {
+      "prefix": "SoundTool/dependency-materials/licenses/",
+      "members": 109,
+      "uncompressed_bytes": 607421
+    },
+    {
+      "prefix": "SoundTool/dependency-materials/FFmpeg-selfbuild/licenses/",
+      "members": 44,
+      "uncompressed_bytes": 593712
+    }
+  ],
+  "actual_component_source_access": {
+    "private_GitHub_required": false,
+    "ordinary_Windows_user": "Keep complete current Windows ZIP; both applications and their pinned dependencies are inside",
+    "builder_source_entry": "Corresponding-Source.zip -> packaging/portable_entry.py or packaging/official_runtime.py -> build_m5.py; Zig can come from current Windows PublicBuildM5/deps/zig/; own official firmware input remains required",
+    "builder_packaging": "Corresponding-Source.zip -> packaging/README.md/build_portable.py; all 117 notice-selection files are inside this source ZIP; fixed official host and seven builder wheels acquired using included public locks",
+    "sound_source_entry": "SoundTool-Corresponding-Source.zip -> sound-tool/launch_sound_gui.py or sound_cli.py; use runtime and pinned vendor files from current Windows ZIP as documented",
+    "ffmpeg_source_entry": "FFmpeg-Corresponding-Source.zip -> build/BUILDING-NEUTRAL.md and rebuild-neutral.py; source archives physically included and host tools use public pinned acquisition records",
+    "root_builder_portable_entry": "Historical root portable_entry.py has a known -I fallback-path issue; canonical packaging/portable_entry.py is present and uses the correct source-root relation",
+    "instructions_inspected_statically_only": true
+  },
+  "historical_whole_bundle_packaging": {
+    "public_bare_clone_replay_promised": false,
+    "members": [
+      "sound-tool-package/build_privacy_package.py",
+      "sound-tool-package/build_combined.py",
+      "sound-tool-package/prepare_source.py"
+    ],
+    "exact_historical_base_required_by_r10_1_recipe": {
+      "bytes": 429544962,
+      "sha256": "9272e6025b5201315d398faf0edce29839b928458d47357f2634d9556965d870"
+    },
+    "old_private_path_base_not_in_public_asset_plan": true,
+    "whole_bundle_history_recipe_not_component_runtime_dependency": true,
+    "current_component_runtime_and_source_access_uses_current_public_assets": true
+  },
+  "official_host_public_acquisition": {
+    "python_embed_url": "https://www.python.org/ftp/python/3.14.10/python-3.14.10-embed-amd64.zip",
+    "python_source_url": "https://www.python.org/ftp/python/3.14.10/Python-3.14.10.tgz",
+    "builder_wheels": [
+      {
+        "name": "altgraph-0.17.5-py2.py3-none-any.whl",
+        "bytes": 21228,
+        "sha256": "f3a22400bce1b0c701683820ac4f3b159cd301acab067c51c653e06961600597"
+      },
+      {
+        "name": "packaging-26.3-py3-none-any.whl",
+        "bytes": 129956,
+        "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
+      },
+      {
+        "name": "pefile-2024.8.26-py3-none-any.whl",
+        "bytes": 74766,
+        "sha256": "76f8b485dcd3b1bb8166f1128d395fa3d87af26360c2358fb75b80019b957c6f"
+      },
+      {
+        "name": "pyinstaller-6.22.3-py3-none-win_amd64.whl",
+        "bytes": 1454907,
+        "sha256": "500bd58c7bf7e584a8435adccbd763a0b918d5c12b08d74ff50fd79b2915458b"
+      },
+      {
+        "name": "pyinstaller_hooks_contrib-2026.9-py3-none-any.whl",
+        "bytes": 462931,
+        "sha256": "fb3e67dd64122561724c48ad0366ac9e8c16e638b63bf7d85de03bf3fdbf06c3"
+      },
+      {
+        "name": "pywin32_ctypes-0.2.3-py3-none-any.whl",
+        "bytes": 30756,
+        "sha256": "8a1513379d709975552d202d942d9837758905c8d01eb82b8bcc30918929e7b8"
+      },
+      {
+        "name": "setuptools-84.2.1-py3-none-any.whl",
+        "bytes": 876263,
+        "sha256": "ca140b45d5325a9478f880e351484f62fef15f336462e449ca0c03c873d589c2"
+      }
+    ],
+    "firmware_input": "User-acquired unmodified official Z50 C2.60; neither official firmware nor generated firmware is included"
+  }
+}

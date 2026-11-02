@@ -1,0 +1,9 @@
+*.zip
+*.exe
+*.dll
+*.bin
+*.pyc
+__pycache__/
+/private/
+/outputs/
+/work/

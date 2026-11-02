@@ -1,0 +1,21 @@
+Z50 Lab r10.1 download repository — component licensing
+
+Copyright (c) 2026 Z50 Lab contributors
+
+Rights-qualified original documentation added to this download repository is
+provided under the MIT License, whose full text is in COPYING/MIT.txt.
+This grant does not relicense third-party texts, firmware, software archives,
+source archives, or their contents. Original texts in LICENSES retain their
+own terms. See LICENSE-SCOPE.md and SOURCE-DELIVERY.md for their scope.
+
+The distributed Builder includes a GPL-3.0-only recovery module. Applicable
+combined-program GPL obligations continue; the Windows bundle is not licensed
+as a whole under MIT. Project additions receive only the rights-qualified
+grant already recorded in their source archives. Third-party components keep
+their licenses. No project grant covers Nikon firmware, resources or
+input-derived values, trademarks, or another party's rights.
+
+This file concerns the new documentation repository. Software license
+statements and complete notices are preserved inside the unmodified r10.1
+Windows archive and corresponding-source archives. This repository does not
+constitute a legal clearance or a grant from Nikon or Microsoft.

@@ -1,0 +1,77 @@
+{
+  "schema": "original-license-texts-v1",
+  "files": [
+    {
+      "path": "COPYING/MIT.txt",
+      "bytes": 1077,
+      "sha256": "f4150cd83ea974e0eeb82ae873f7d7b15db7898cd00b8f7fbe2bfedb5c97e66c",
+      "origin": "Reviewed source e9215900f7595096d4b68c5709e962946e21e3cf",
+      "original_path": "COPYING/MIT.txt",
+      "original_bytes_retained": true
+    },
+    {
+      "path": "COPYING/GPL-3.0-only.txt",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "origin": "Reviewed source e9215900f7595096d4b68c5709e962946e21e3cf",
+      "original_path": "COPYING/GPL-3.0-only.txt",
+      "original_bytes_retained": true
+    },
+    {
+      "path": "LICENSES/Builder-original-LICENSE.txt",
+      "bytes": 2151,
+      "sha256": "e11f0381a9c9756c5ce97bf9838b23016bc0a298ed7c88184cd12f60c0560aa3",
+      "origin": "Windows ZIP member",
+      "original_path": "PublicBuildM5/LICENSE",
+      "original_bytes_retained": true
+    },
+    {
+      "path": "LICENSES/SoundTool-original-LICENSE.txt",
+      "bytes": 1941,
+      "sha256": "22aa66cb277ee5ab689d2cc9b431493eb958bd8562f7ba1997050c2ed363abac",
+      "origin": "Windows ZIP member",
+      "original_path": "SoundTool/project-licenses/LICENSE",
+      "original_bytes_retained": true
+    },
+    {
+      "path": "LICENSES/Python-Windows-original-LICENSE.txt",
+      "bytes": 35407,
+      "sha256": "935cf13e19f8c31b497d20b05d73623431a226b230c3599bc30fa3348979bc68",
+      "origin": "Windows ZIP member",
+      "original_path": "SoundTool/licenses/release-preflight/r6-python-ms/CPython-3.14.10-WINDOWS-LICENSE.txt",
+      "original_bytes_retained": true
+    },
+    {
+      "path": "LICENSES/Zig-original-LICENSE.txt",
+      "bytes": 1080,
+      "sha256": "5c537d6853e005298a285d508cff9ac7192cea23576c840d485b2b586a7ff177",
+      "origin": "Windows ZIP member",
+      "original_path": "PublicBuildM5/deps/zig/LICENSE",
+      "original_bytes_retained": true
+    },
+    {
+      "path": "LICENSES/FFmpeg-original-LICENSE.md",
+      "bytes": 4346,
+      "sha256": "2e1d16c72fd74e12063776371da757322f8b77589386532f4fd8634bde7de1af",
+      "origin": "Windows ZIP member",
+      "original_path": "SoundTool/dependency-materials/FFmpeg-selfbuild/licenses/FFmpeg-LICENSE.md",
+      "original_bytes_retained": true
+    },
+    {
+      "path": "LICENSES/FFmpeg-COPYING.LGPLv2.1.txt",
+      "bytes": 26517,
+      "sha256": "246041b6ecf9bc32d718a62c57877c78b5eb397b6467e74ed7ae2626ab189c30",
+      "origin": "Windows ZIP member",
+      "original_path": "SoundTool/dependency-materials/FFmpeg-selfbuild/licenses/FFmpeg-COPYING.LGPLv2.1",
+      "original_bytes_retained": true
+    },
+    {
+      "path": "LICENSES/FFmpeg-COPYING.LGPLv3.txt",
+      "bytes": 7651,
+      "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768",
+      "origin": "Windows ZIP member",
+      "original_path": "SoundTool/dependency-materials/FFmpeg-selfbuild/licenses/FFmpeg-COPYING.LGPLv3",
+      "original_bytes_retained": true
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+PUBLIC-BUILD-M5 — adopted licensing policy A, 2026-10-30
+
+The user has selected MIT for original additions only to the extent the user
+actually has authority to license them. This supersedes the unadopted r6 drafts
+as a policy decision. The user subsequently supplied the copyright notice:
+Copyright (c) 2026 Z50 Lab contributors
+This is the user's chosen attribution; no legal entity, membership list or
+complete chain of title is invented or independently certified.
+
+The MIT permission/disclaimer text is in COPYING/MIT.txt. The exact files and
+scopes are listed in release-docs/r8-license/file-license-map.json. MIT is
+adopted for the actually authorizable original project expression; third-party
+and unresolved mixed scopes remain excluded or CONDITIONAL as specified there.
+No placeholder is used and no complete-project MIT authorization is represented.
+
+parser/local_recovery.py remains GPL-3.0-only, adapted from
+XinmiaoZhao/NikonFirmwarePatch at commit
+1a60fc00ff082b6ccc346db0df626662308b3974. Its existing notices, GPL wrapper,
+tests and source are retained. The complete GPL v3 is supplied unchanged at
+COPYING/GPL-3.0-only.txt and parser/LICENSE. Distribution of the combined host
+application must satisfy GPL v3, including applicable Corresponding Source and
+notice obligations. MIT-compatible project additions do not relicense the GPL
+recovery code or resolve excluded third-party rights.
+
+Nikon input firmware, recovered stock, resources, native replay/derived values,
+and their content in generated firmware are not licensed by this project.
+Third-party notices and license materials retain their own terms. A tool's
+license does not by itself determine or authorize every output's distribution.
+
+Read LICENSE-SCOPE.md, NOTICE.md, CONTRIBUTING.md and the machine-readable
+map before relying on any file-level license. Public release and Push remain
+HOLD; this notice does not withdraw upstream third-party permissions.
