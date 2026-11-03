@@ -21,4 +21,4 @@
 
 项目独立于 Nikon，项目许可不授予 Nikon 固件、原资源、输入派生值或生成固件的权利。具体 Nikon 合同/工具提供及 Windows 组件许可适用仍需分别处理，不能靠独立下载仓库、免责声明或测试结果消除。
 
-本地制备和仓库名称确认不等于批准创建远程、公开仓库或 Publish。实际托管状态以 [Releases](https://github.com/chen001-design/nikon-z50-downloads/releases) 为准，当前文档不声称已有公众下载。供源与许可入口见 [SOURCE-DELIVERY.md](SOURCE-DELIVERY.md)、[LICENSE-SCOPE.md](LICENSE-SCOPE.md)。
+下载与版本信息以本仓库 [Releases](https://github.com/chen001-design/nikon-z50-downloads/releases) 中相应发行条目为准。说明与测试记录不构成对设备安全、相机安装或故障恢复的保证。供源与许可入口见 [SOURCE-DELIVERY.md](SOURCE-DELIVERY.md)、[LICENSE-SCOPE.md](LICENSE-SCOPE.md)。

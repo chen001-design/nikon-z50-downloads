@@ -1,7 +1,7 @@
 {
   "schema": "explicit-public-documentation-whitelist-v1",
-  "scope": "Exactly these files plus this inventory; unchanged r10.1 six assets remain separately listed",
-  "self_hash": "Excluded to avoid a circular digest; bound by the documentation commit and authorized sync plan, not by the unchanged software r10.1 tag",
+  "scope": "These26 documentation/license/index files including this inventory; software and six original release assets remain unchanged",
+  "self_hash": "Excluded to avoid a circular digest; bound by the documentation commit and publication preparation plan; original r10.1 software tag is unchanged",
   "files": [
     {
       "path": ".gitattributes",
@@ -25,8 +25,8 @@
     },
     {
       "path": "KNOWN-LIMITATIONS.md",
-      "bytes": 2725,
-      "sha256": "33cebb1b1170870346069f7c3052f806c8bd5326e9ce57749098ff3e66067876"
+      "bytes": 2714,
+      "sha256": "d59c652d247a36d3e954935c325c674f5288ba5ac38f3950d35aa0c510a3f02d"
     },
     {
       "path": "LICENSE",
@@ -35,8 +35,8 @@
     },
     {
       "path": "LICENSE-SCOPE.md",
-      "bytes": 2610,
-      "sha256": "fa53b03b0c068ee5e5d09764c1c10611097fdaa666104f2738fc25017b8688dd"
+      "bytes": 2550,
+      "sha256": "625f9cf9c7413cbeae21688e32c6aa28679629814bbf3cfb6236a76a711878e4"
     },
     {
       "path": "LICENSES/Builder-original-LICENSE.txt",
@@ -85,18 +85,18 @@
     },
     {
       "path": "QUICKSTART.zh-CN.md",
-      "bytes": 1813,
-      "sha256": "535dd49ceb68987d206bc702b90479e52510a5468b7a0314ffc376d4e69d1793"
+      "bytes": 1849,
+      "sha256": "c3c68c96aaf682863ca1c0e4df7cd6f4fd449158d7538fa6d34b2c98ba9502e1"
     },
     {
       "path": "README.en.md",
-      "bytes": 9253,
-      "sha256": "0f04a55620501a8f31737bc40b01bc1332c3db28aa68c43530202b70a67ae443"
+      "bytes": 9269,
+      "sha256": "29f0e2499750116f45df63d63f9a0a17955da7f64d5a6f5ee54bdce4d9fabe94"
     },
     {
       "path": "README.md",
-      "bytes": 8670,
-      "sha256": "216a3475f076b053a06c042cfb109c9c029cdbb78bdbcbaa9c5a530f988c9edf"
+      "bytes": 8660,
+      "sha256": "397d73196ea880f5e4f70545ff7079c6d5d1ff3bfef44f8085376fb1bef76952"
     },
     {
       "path": "README.zh-CN.md",

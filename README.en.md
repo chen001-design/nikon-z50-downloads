@@ -23,7 +23,7 @@ This project is independent of Nikon. **The ZIP is a computer tool package, not 
 
 Automatic `Source code (zip)` / `Source code (tar.gz)` downloads contain this documentation repository, not the Windows tools. Find the experimental prerelease by version in Releases.
 
-> Status on 2026-11-03: the repository remains private and r10.1 remains a draft. Public downloads are not open. The link above is the fixed download location, not a claim of public availability.
+> This page covers the **r10.1 experimental prerelease**. Download the complete Windows tool package and `SHA256SUMS.txt` from the r10.1 entry on Releases above. Verify the archive, extract it in full, and read the risk notice and tutorial before use.
 
 The Windows ZIP is **430,722,516 bytes**. In its download directory, PowerShell can check it with:
 
@@ -91,7 +91,7 @@ Software and documentation are provided as-is, without promises of fitness, cont
 
 To the extent permitted by applicable law, the authors, contributors and maintainers accept no liability for bricking, equipment damage, data loss, repair costs or other losses arising from use of this project, building or flashing. No unbricking, recovery, repair or compensation is promised. Liability that cannot lawfully be excluded and the original component license terms remain unaffected.
 
-Project licensing grants no rights to Nikon firmware, input-derived material, trademarks or other third-party content. Obtain the rights needed for your firmware/audio processing and observe applicable terms. A disclaimer, passing tests or a public repository is not a third-party authorization. Specific Nikon/Windows rights applicability remains unresolved and public release requires separate approval.
+Project licensing grants no rights to Nikon firmware, input-derived material, trademarks or other third-party content. Obtain the rights needed for your firmware/audio processing and observe applicable terms. A disclaimer, passing tests or a public repository is not a third-party authorization. Use remains subject to applicable law and relevant third-party terms.
 
 See [LICENSE](LICENSE) and [LICENSE-SCOPE.md](LICENSE-SCOPE.md). Qualified documentation MIT terms do not make the entire software bundle MIT; recovery/combined-program GPL and other component terms remain. This text adds no restriction to modification or redistribution rights granted by those licenses.
 
