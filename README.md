@@ -1,38 +1,94 @@
-# Z50 Lab Windows tools — r10.1
+# Nikon Z50 Lab — 自定义音效与 Windows 工具
 
-[中文](README.zh-CN.md)
+[English](README.en.md) · [下载](https://github.com/chen001-design/nikon-z50-downloads/releases) · [使用教程](#使用教程) · [风险提示](#风险提示与已知限制)
 
-Experimental Windows tools for Nikon Z50 C2.60: prepare sounds in eight slots and build an independent M5 EG module from a matching official input supplied by the user. **The Windows ZIP is a computer tool package, not a complete Nikon firmware updater for direct camera installation.**
+## 项目介绍
 
-Preparation snapshot, 2026-11-02: the repository name `chen001-design/nikon-z50-downloads` is confirmed. The release target below is planned; these links do not claim that the repository or attachments are already public. Check the actual [Releases](https://github.com/chen001-design/nikon-z50-downloads/releases) state and the intended [r10.1 release](https://github.com/chen001-design/nikon-z50-downloads/releases/tag/r10.1). A prerelease may not appear under “latest”.
+Z50 Lab 是面向 **Nikon Z50 第一代、官方固件 C2.60** 的实验性自定义拍摄音效项目。当前工具包版本为 **r10.1**，包括：
 
-## Windows users
+- **多音源制作工具**：将 WAV、MP3、AAC、M4A 制作为八个固定槽位的 SND 音效文件，并生成电脑试听 WAV。
+- **M5 固件构建器**：在电脑上校验自行提供的匹配官方输入，生成独立音效 EG 模块和构建报告。
+- **配套音效方案**：八个固定 SD 音源槽位、内置三声备用音及独立开关；正常开机预载，之后从缓存切换。每次开机恢复 Built-in／Off，选择和开关不跨重启保存。
 
-Download `Z50-Lab-Windows-Tools-r10.1-local-privacy-candidate.zip` and `SHA256SUMS.txt` from the matching release. Verify the archive and extract the entire ZIP. Ordinary use needs no separate Python, FFmpeg, Zig or Keystone installation. Existing Windows runtime prerequisites are checked by the launchers; read and decide the displayed conditions yourself.
+本项目独立于 Nikon。**下载的是电脑工具包，不是可直接刷入相机的完整 Nikon 更新固件。** 包内不提供官方固件或已经生成的 EG；制作声音文件也不表示相机已经安装相应方案。
 
-| Task | Extracted package entry |
-|---|---|
-| Prepare WAV/MP3/AAC/M4A sounds for eight slots | Root `启动多音源制作工具.cmd` |
-| Build an M5 EG on the computer | `PublicBuildM5/Start-PublicBuildM5.cmd`; read `PublicBuildM5/user-guide/BUILD.md` |
+## 下载
 
-See the [Chinese quick start](QUICKSTART.zh-CN.md). The package includes neither official firmware nor a generated EG. Input checks must pass; the tool does not install firmware or establish a recovery procedure.
+**统一下载入口：[Releases / 发行文件](https://github.com/chen001-design/nikon-z50-downloads/releases)。** 打开 **r10.1** 的发行条目，在 **Assets / 附件** 中下载：
 
-Windows ZIP: **430,722,516 bytes**, SHA256:
+1. `Z50-Lab-Windows-Tools-r10.1-local-privacy-candidate.zip`
+2. `SHA256SUMS.txt`
+
+`Source code (zip)` / `Source code (tar.gz)` 是本说明仓库的自动归档，不是 Windows 工具包。实验性预发行请在 Releases 中按版本查找。
+
+> 2026-11-03 状态：仓库仍为私有，r10.1 仍为草稿，公众下载尚未开放。上方是固定下载入口；没有权限或看不到已发布附件时，请勿把其他文件当作本版工具包。
+
+Windows ZIP 为 **430,722,516 字节**。可在下载目录打开 PowerShell 核对：
+
+```powershell
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\Z50-Lab-Windows-Tools-r10.1-local-privacy-candidate.zip'
+```
+
+预期 SHA256：
 
 ```text
 5f28a65e5655a55bd7d5139ea333a1c3450d78f56bc0384b3958d7447e725870
 ```
 
-## Developers and corresponding source
+## 使用教程
 
-The release plan has six assets: the Windows ZIP, `Corresponding-Source.zip`, `SoundTool-Corresponding-Source.zip`, `FFmpeg-Corresponding-Source.zip`, a four-archive `SHA256SUMS.txt`, and `RELEASE-NOTES.zh-CN.md`. The three source ZIPs are byte-identical copies of the corresponding Windows ZIP members.
+### 1. 完整解压并准备环境
 
-**This Git repository contains download documentation, licenses and identity records; its automatic GitHub “Source code” ZIP does not contain the component sources.** Obtain the physical source assets and the additional Python/Tcl/Tk and tool materials inside the Windows ZIP as explained in [SOURCE-DELIVERY.md](SOURCE-DELIVERY.md). No access to a private development repository is required. Component build controls are supplied; a fresh-machine cold rebuild or an identical complete Windows ZIP is not promised.
+将整个 Windows ZIP 解压到电脑文件夹，保留全部子目录。解压后应能看到根目录的 `启动多音源制作工具.cmd` 和 `PublicBuildM5` 文件夹，不要只取出单个 EXE。
 
-## Evidence and limits
+启动条件为 **Windows 10／11 x64**、系统 UCRT 及 Microsoft VC v14 x64 运行库；所检查的 VC 版本至少为 `14.51.36247.0`。无需另装 Python、FFmpeg、Zig 或 Keystone。缺少运行库时，启动器会停止并提示微软官方入口，不会自动安装。
 
-The retained r10.1 checks passed 375 audio assertions, 40 golden byte comparisons, 24 historical PCM hashes and complete M5 byte identity. On 2026-11-02, the user reported that the r10.1 interface and listening tests all passed. This is an overall user report, not invented per-case, Windows-version or cross-machine evidence. Pending wording inside the unchanged package records the earlier sealing state.
+启动器显示的适用条件请本人阅读并决定；输入 `Y` 才继续，`N` 或直接回车取消。该提示不代替你接受 Nikon 下载协议或其他安装器条款。
 
-The release is experimental. A reported burst-photography sound failure remains unresolved; camera installation/recovery and all Windows environments are not certified. Read [KNOWN-LIMITATIONS.md](KNOWN-LIMITATIONS.md).
+### 2. 制作与试听音效
 
-[LICENSE](LICENSE) applies only within its stated scope. Project documentation terms do not relicense the programs: the recovery/combined-host GPL obligations, FFmpeg and other component terms remain separate. See [LICENSE-SCOPE.md](LICENSE-SCOPE.md). An independent download repository does not clear Nikon/Windows rights conditions or authorize publication.
+1. 双击解压根目录的 **`启动多音源制作工具.cmd`**，打开“制作存储卡多音源”窗口。
+2. 在需要的槽位点击 **“选择声音…”**，选择自己有权使用的 WAV、MP3、AAC 或 M4A；至少选一个槽位，无需填满八个。
+3. 点击 **“制作所选槽位音源包”**。较长声音会询问是否保留开头约半秒；选择“否”会取消本次整包制作，短声会补静音。
+4. 选择电脑上的保存位置，程序会在其中新建制作包；若同名制作包已存在，换一个保存位置，原件不会覆盖。
+5. 打开制作包的 **`previews`** 文件夹，先在电脑试听 WAV。对应音效在 **`sd-card`** 文件夹中，仅包含本次所选槽位的 `SOUND01.SND` 至 `SOUND08.SND`，另附清单和说明。
+
+SND 的机内使用需要兼容的多音源方案。选音源不自动开启拍摄音效，需单独启用；内置三声是项目备用音，不是原厂快门声。当前不支持开机状态下重扫新文件或跨重启记住选择。
+
+### 3. 在电脑生成 M5 模块
+
+自行取得且有权使用的、未经修改的官方 **Z50 C2.60** 完整输入，示例文件名为 `Z_50_0260.bin`。工具不代为下载，也不代接受协议。其他型号、其他版本或修改过的文件不能替代该输入。
+
+进入解压后的 **`PublicBuildM5`** 文件夹，在 PowerShell 中运行以下命令，并将两个路径替换为自己的路径：
+
+```powershell
+.\Start-PublicBuildM5.cmd --source "D:\Firmware\Z_50_0260.bin" --output "D:\Builds\Z50-M5-new"
+```
+
+示例中的 `D:\Builds` 父目录必须已经存在且可写，`Z50-M5-new` 末级目录必须尚不存在；路径有空格时保留引号。**构建器是命令行工具，不会弹出固件选择窗口；只双击或不带参数运行不能完成构建。**
+
+成功输出目录中应有 **`EG163060.BIN`** 和 **`build-report.json`**。检查失败时核对版本、文件完整性和目录，不绕过检查。基准 M5 为 31,665,490 字节，完整身份见 [版本与验证记录](VERSION.json)。
+
+EG 是独立模块，不能按完整官方更新包理解或混用其他机型的刷写步骤。本教程到电脑生成与核对为止，工具不会安装、写卡或连接相机；构建成功不代表相机安装安全或故障可恢复。包内 `PublicBuildM5/user-guide/BUILD.md` 有对应命令说明。
+
+## 风险提示与已知限制
+
+- **实验性质**：固件相关处理或后续使用存在相机无法启动、文件损坏、数据丢失等风险；请备份重要资料，不将实验方案作为不可替代工作的唯一保障。
+- **恢复能力未验证**：目前没有已验证的救砖、失败启动恢复或通用恢复路径，不能保证刷回原厂就能恢复。
+- **连拍已知问题**：`CA-M5-STRESS-01` 报告连续拍摄数十张后可能无音效；根因、精确阈值和概率未确定，尚未修复。
+- **功能边界**：八固定槽位在正常开机时预载，不是任意文件浏览器；每次开机 Built-in／Off，机内选择不自动启用音效，也不跨重启保存。
+- **验证范围有限**：r10.1 已有音效检查、完整 M5 同字节验证及人工界面／试听通过记录，不代表所有 Windows 主机、机身、卡、模式或持续连拍均已验证。
+
+完整限制与证据见 [KNOWN-LIMITATIONS.md](KNOWN-LIMITATIONS.md)、[VALIDATION.json](VALIDATION.json)。包内旧的 pending／待确认文字是封包时快照，不覆盖后续整体反馈，也不增加未做过的验证。
+
+## 免责声明与许可
+
+本项目由 Z50 Lab contributors 维护，与 Nikon 无隶属、赞助或背书关系；Nikon 等名称用于识别兼容目标，相关权利归各自权利人。
+
+软件及说明按现状提供，不承诺特定用途适用性、持续可用、设备安全或故障恢复。使用前请结合实际环境自行判断；责任与保证的范围以适用法律及各组件许可为准，本说明不排除依法不能排除的责任，也不保证免责声明在所有地区均有相同效力。
+
+项目许可不授予 Nikon 固件、输入派生内容、商标或其他第三方材料的权利；请自行具备取得、处理音源与固件所需的权利并遵守适用条款。免责声明、测试通过或仓库公开都不等于获得第三方授权。具体 Nikon／Windows 权利适用仍待处置，公开发布需另行批准。
+
+许可范围见 [LICENSE](LICENSE) 和 [LICENSE-SCOPE.md](LICENSE-SCOPE.md)。根目录说明的 MIT 范围不将整个软件包改为纯 MIT；GPL 恢复／组合程序和其他组件保留原条款。本说明不另行限制这些许可授予的修改或再分发权。
+
+同版附件还提供构建器、音效工具和 FFmpeg 的对应源码；Python／Tcl／Tk、Zig 等其他源与原许可证保留在完整 Windows 包中。源码材料位置及构建说明见 [SOURCE-DELIVERY.md](SOURCE-DELIVERY.md)。
