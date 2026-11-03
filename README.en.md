@@ -10,6 +10,10 @@ The sound application converts WAV, MP3, AAC and M4A into numbered SND files and
 
 This project is independent of Nikon. **The ZIP is a computer tool package, not a complete Nikon update ready to install.** Official firmware and generated EG files are not supplied. Creating sound files does not install the companion camera functionality.
 
+> **Flash with caution. Flashing can fail, leave a camera unable to start or “bricked”, or cause data loss. The probability is unknown. Passing build and checksum checks does not guarantee safe flashing or recovery. Make your decision only after understanding these risks.**
+>
+> **This project makes no promise of unbricking, recovery, repair or compensation. To the extent permitted by applicable law, it accepts no liability for bricking, equipment damage, data loss, repair costs or similar losses arising from use or flashing. Liability that cannot lawfully be excluded and the original component license terms are not excluded or changed by this statement.**
+
 ## Download
 
 **One download location: [Releases](https://github.com/chen001-design/nikon-z50-downloads/releases).** Open the **r10.1** entry and obtain these **Assets**:
@@ -84,6 +88,8 @@ See [KNOWN-LIMITATIONS.md](KNOWN-LIMITATIONS.md) and [VALIDATION.json](VALIDATIO
 Maintained by Z50 Lab contributors, independently of Nikon, without Nikon affiliation, sponsorship or endorsement. Product names identify interoperability targets; their owners retain their rights.
 
 Software and documentation are provided as-is, without promises of fitness, continued availability, device safety or recovery. Assess your circumstances before use. Warranty and liability scope follows applicable law and each component's license; this statement does not exclude liability that cannot lawfully be excluded or guarantee the same effect in every jurisdiction.
+
+To the extent permitted by applicable law, the authors, contributors and maintainers accept no liability for bricking, equipment damage, data loss, repair costs or other losses arising from use of this project, building or flashing. No unbricking, recovery, repair or compensation is promised. Liability that cannot lawfully be excluded and the original component license terms remain unaffected.
 
 Project licensing grants no rights to Nikon firmware, input-derived material, trademarks or other third-party content. Obtain the rights needed for your firmware/audio processing and observe applicable terms. A disclaimer, passing tests or a public repository is not a third-party authorization. Specific Nikon/Windows rights applicability remains unresolved and public release requires separate approval.
 

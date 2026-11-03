@@ -1,7 +1,7 @@
 {
   "schema": "explicit-public-documentation-whitelist-v1",
-  "scope": "These26 documentation/license/index files including this inventory; unchanged r10.1 six release assets listed separately",
-  "self_hash": "Excluded to avoid a circular digest; bound by the documentation commit and local sync plan, not by the unchanged software r10.1 tag",
+  "scope": "Exactly these files plus this inventory; unchanged r10.1 six assets remain separately listed",
+  "self_hash": "Excluded to avoid a circular digest; bound by the documentation commit and authorized sync plan, not by the unchanged software r10.1 tag",
   "files": [
     {
       "path": ".gitattributes",
@@ -85,23 +85,23 @@
     },
     {
       "path": "QUICKSTART.zh-CN.md",
-      "bytes": 1470,
-      "sha256": "02bb3a6d26d925cb0bc79afde109be05eed2ad30138d059ab7ffeca012e80ff2"
+      "bytes": 1813,
+      "sha256": "535dd49ceb68987d206bc702b90479e52510a5468b7a0314ffc376d4e69d1793"
     },
     {
       "path": "README.en.md",
-      "bytes": 8186,
-      "sha256": "cc8d4fc6cccc7dd18403625a7f95bb4151b63433bc2853d7287c64adb7c2b95f"
+      "bytes": 9253,
+      "sha256": "0f04a55620501a8f31737bc40b01bc1332c3db28aa68c43530202b70a67ae443"
     },
     {
       "path": "README.md",
-      "bytes": 7760,
-      "sha256": "a96969a1656a3f46ce6b790fea8e5bbfe626a21172ba9f9ece11599ffde5e934"
+      "bytes": 8670,
+      "sha256": "216a3475f076b053a06c042cfb109c9c029cdbb78bdbcbaa9c5a530f988c9edf"
     },
     {
       "path": "README.zh-CN.md",
-      "bytes": 400,
-      "sha256": "2119541d1f6435019e75fce64f2ebb2131c2acddebc89eae3b96dfe45a44e297"
+      "bytes": 743,
+      "sha256": "9aed7bcb17d2759d2f5c4838924ab280e4c876772a889e9039b53c37ccee7530"
     },
     {
       "path": "RELEASE-ASSETS.json",
