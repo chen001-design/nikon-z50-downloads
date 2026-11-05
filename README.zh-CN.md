@@ -1,12 +1,7 @@
-# Nikon Z50 Lab 中文说明
+# Z50 Lab 中文使用说明
 
-中文说明已统一到[仓库首页 README](README.md)，包含项目介绍、下载、使用教程、风险提示、免责声明和许可说明。
+完整中文教程已集中到 [README.md](README.md)，包含刷机风险、两个工具入口、固件生成与核验、音效制作、条件性安装、机内操作和已知限制。
 
-> **请谨慎刷机。可能刷写失败、无法启动或变砖，实际概率未知，不能保证恢复。本项目不提供救砖或赔偿承诺；在适用法律允许范围内不承担相关损失责任。完整责任边界见[首页免责声明](README.md#免责声明与许可)，法定不可排除责任与原许可不受影响。**
+[English guide](README.en.md) · [风险与已知限制](KNOWN-LIMITATIONS.md) · [下载](https://github.com/chen001-design/nikon-z50-downloads/releases)
 
-- [下载](README.md#下载)
-- [使用教程](README.md#使用教程)
-- [风险与已知限制](README.md#风险提示与已知限制)
-- [免责声明与许可](README.md#免责声明与许可)
-
-[English](README.en.md)
+本入口保留以兼容旧链接；请按发行条目的版本与SHA选择同版运行包和Sources，不混用旧版附件。

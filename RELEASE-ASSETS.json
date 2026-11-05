@@ -1,42 +1,36 @@
 {
-  "schema": "public-download-r10.1-six-assets-v1",
-  "state_at_preparation": "LOCAL_ONLY_NOT_UPLOADED_OR_PUBLISHED",
+  "schema": "z50-r5-release-assets-v1",
   "repository": "chen001-design/nikon-z50-downloads",
-  "tag": "r10.1",
+  "proposed_tag": "m5-battery-cache-r5",
   "prerelease": true,
+  "local_preparation_only": true,
+  "remote_assets_verified": false,
+  "expected_release_url": "https://github.com/chen001-design/nikon-z50-downloads/releases/tag/m5-battery-cache-r5",
   "assets": [
     {
-      "name": "Z50-Lab-Windows-Tools-r10.1-local-privacy-candidate.zip",
-      "bytes": 430722516,
-      "sha256": "5f28a65e5655a55bd7d5139ea333a1c3450d78f56bc0384b3958d7447e725870"
+      "file": "Z50-Lab-Windows-Tools-r5.zip",
+      "bytes": 97472093,
+      "sha256": "215275d7cccdc3941c295a127ec76b8fc35410665f77ffe02b922f536a3e800c",
+      "purpose": "two-tool runtime"
     },
     {
-      "name": "Corresponding-Source.zip",
-      "bytes": 1714673,
-      "sha256": "ed98ad2a728ab5117378e14ee413dbad470f260bb25f63548b086a3312f05154"
+      "file": "Z50-Lab-Sources-r5.zip",
+      "bytes": 246973796,
+      "sha256": "333b6c15089d1c9e554815a6d8cb8bd6544ef0d337862b2c5fb1f4623a0f8fdd",
+      "purpose": "complete matching source and build materials"
     },
     {
-      "name": "SoundTool-Corresponding-Source.zip",
-      "bytes": 70677,
-      "sha256": "0fccf14cba7ffb3bada927e9a4ff91d6e8bdd9fb68c2fa10bcaa1e0a6784600e"
+      "file": "SHA256SUMS.txt",
+      "bytes": 184,
+      "sha256": "87b2af14c7969d0b5a72062a98c4fab584c6c6627888130022c6be46bbdb17f0",
+      "purpose": "hashes for the two matching ZIPs"
     },
     {
-      "name": "FFmpeg-Corresponding-Source.zip",
-      "bytes": 58838001,
-      "sha256": "e6c5bf03afd446ea899a09dc2f796aa7f543bf048a8eb6cf2b8a4314aea28ee1"
-    },
-    {
-      "name": "SHA256SUMS.txt",
-      "bytes": 416,
-      "sha256": "fb27bce6230f8ff3b977f38ae983d1e87939eab1c8c52431c33220f3bb3a8215"
-    },
-    {
-      "name": "RELEASE-NOTES.zh-CN.md",
-      "bytes": 3257,
-      "sha256": "4010ac719edf8162b4b7ef120229963d8a57bfd3094c2a6a9ba5dd1164b41d15"
+      "file": "RELEASE-NOTES.md",
+      "bytes": 2592,
+      "sha256": "0f0272a5927672c29c3e38d508d35562292cf62dd4ceceba5e4b1868ae144b26",
+      "purpose": "scope and risk release notes"
     }
   ],
-  "checksum_scope": "Four archives only; excludes checksum itself and release notes",
-  "github_auto_source_archive": "Documentation repository only; not complete software source",
-  "full_additional_dependency_sources_in_windows": true
+  "source_supply": "Provide the complete matching Sources alongside runtime with equivalent access and no separate source fee. Runtime execution does not require downloading Sources."
 }

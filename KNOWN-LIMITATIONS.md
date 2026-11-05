@@ -1,24 +1,36 @@
-# r10.1 已知限制与验证范围
+# 风险与已知限制 / Risks and known limitations
 
-本版建议作为实验性 Pre-release。它提供 Windows 电脑工具及实际对应源，适用目标为 Nikon Z50 C2.60；不附官方固件、生成的 EG 或完整可直接刷入的 Nikon 更新包。
+本说明对应第一代 Nikon Z50 C2.60、默认 `m5-battery-cache` r5 组合及其双工具交付。它不是官方固件、稳定性认证或安装安全保证。
 
-## 已有证据
+## 刷写与恢复
 
-保留的 r10.1 验收为375项音效断言全部通过、40份黄金 SND/WAV 逐字节相同、24项历史 PCM 哈希一致。完整 M5 基准输出为31,665,490字节，SHA256 `09f539c078676509db12f759a4a9e2fe1516b7455e031635fd60bb677876d03e`，完整 CRC 为0、尾部 `95A7`，与冻结目标全字节相同。不同输出不接受为同一基准 M5。
+- 修改固件可能导致无法启动、拍摄异常、数据丢失或永久损坏；应评估维修成本和停机风险。
+- `EG163060.BIN` 是独立主模块，不能改名成官方整包 `Z_50_0260.bin`。独立模块路径仅按本工程已使用的 C2.60 条件描述，不泛化首刷、降级或其它机型。
+- 更新前备份并核可读取，保持充分、稳定供电；更新期间不关机、不拔卡、不取电池。识别异常或不兼容时停止，不强行改版本/型号/文件名继续。
+- 删除卡上更新文件不会撤销已写入固件。正常菜单可用时的官方重装不等于故障开机状态可恢复。**没有经过验证的救砖方案。**
 
-用户于2026-11-02整体确认“r10.1 界面和试听全部通过”。这不是逐用例测量、指定 Windows 版本、第二台主机或相机安装记录。原包中的 pending/待确认属于封包前快照；本次下载仓库准备没有修改软件、重包或重新运行产品/音频/M5/界面/压力测试。
+## 音效
 
-## 尚存限制
+- **CA-M5-STRESS-01 未修复：** 历史用户反馈连续连拍几十张后可能自定义音效失效。精确阈值、概率与根因未定；本轮不重做压力复现。不保证每帧重播、固定延迟或无限稳定。
+- 启动为 Built-in/Off，选源不会自动启用，选择与On不跨重启保存。Off可试听；原厂蜂鸣音与机械快门仍按原设置工作。
+- 输入WAV/MP3/AAC/M4A在电脑准备为固定短声；长声必须明确同意截取，短声补静音。48kHz/24000帧是准备约定，未作为机内播放时钟的实测校准。
+- 卡声音在正常开机时加载；变更文件或卡应先正常关机。受限FAT16/FAT32/exFAT实现不认证每种卡、容量、分区或损坏状态。
 
-- `CA-M5-STRESS-01`：用户曾报告连拍数十张后可能无音效；原因和发生概率未确定，本次没有重测或修复。电脑端通过不消除此项。
-- 相机故障、更新失败或无法启动时的恢复办法没有得到验证，不能以普通更新成功推断可救砖。EG 模块不等于完整官方更新包。
-- 相机端既有设计为八固定卡槽加 Built-in；正常启动预载、缓存切换，启动为 Built-in/Off。选择音效不自动启用，选择/开关状态不跨重启保存。电脑制作文件不认证所有相机模式或持续运行表现。
-- Windows 10/11 x64 的启动门槛与实际测试覆盖分别看待；未认证每台 Windows、系统新装环境、第二台物理主机、全部存储卡或所有相机时序。
-- 固定来源不等于已逐项核验全部最新安全公告。定向用户路径检查是有边界的检查，不是所有秘密格式、漏洞或法律问题均不存在的保证。
-- 提供组件源和构建控制，不承诺本说明仓库裸克隆即可生成全部程序、相同 EXE/ZIP 哈希或从未验证的冷环境完整重建。
+## 电量与验证范围
 
-## 权利与发布边界
+- 电压来自原厂标称缓存u32，0按未知；非零不证明有效、新鲜或物理准确。未有实测标定系数，不换算精确容量百分比。
+- 记录实际重建时读取缓存；重开菜单、滚动、确认、重画和唤醒不保证新采样。原厂图标和低电警告保留，缓存数值不能替代更新供电判断。
+- 离线/构建/来源一致性结果，以及先前未逐项细分的电脑生成或M5用户反馈，不代表所有机身、卡、模式、Windows电脑或长期运行已验证。程序依赖、完整解压与VC前置仍须满足。
+- 无已验证的恢复保证、整机安全结论或本轮新增实机/屏幕验证。已知路径/凭据模式的阴性检查不是对所有秘密、漏洞或权利的穷尽认证。
 
-项目独立于 Nikon，项目许可不授予 Nikon 固件、原资源、输入派生值或生成固件的权利。具体 Nikon 合同/工具提供及 Windows 组件许可适用仍需分别处理，不能靠独立下载仓库、免责声明或测试结果消除。
+## 来源与再分发
 
-下载与版本信息以本仓库 [Releases](https://github.com/chen001-design/nikon-z50-downloads/releases) 中相应发行条目为准。说明与测试记录不构成对设备安全、相机安装或故障恢复的保证。供源与许可入口见 [SOURCE-DELIVERY.md](SOURCE-DELIVERY.md)、[LICENSE-SCOPE.md](LICENSE-SCOPE.md)。
+运行包与同版完整Sources分开提供；Sources须与程序同时、清晰、等价可取得。保留原通知与许可，不以仅列上游主页或版本号替代实际对应源。项目条款不授予Nikon固件/资源的权利；具体第三方条件与既有适用范围保持。免责声明和技术检查不等于权利清理或公开批准。
+
+---
+
+**English:** This is an experimental original-Z50/C2.60 candidate, not installation-safety or stability certification. Modified firmware can fail to boot, malfunction, lose data or cause permanent damage. There is no verified unbricking procedure. Keep EG distinct from Nikon's full container; stop on recognition/compatibility errors and preserve power throughout an update.
+
+The unresolved M5 burst-sound failure after dozens of shots remains. Startup is Built-in/Off and settings are not persisted across restart. Preview is possible while Off. Fixed short-sound preparation and bounded FAT16/FAT32/exFAT support do not qualify all clocks/cards/workflows.
+
+Cached nominal mV is not a fresh calibrated measurement or capacity percentage. A nonzero sample, matching hash or successful computer build is not physical safety proof. No new broad camera/GUI/long-run qualification is asserted. Sources and actual licenses remain available separately with the same version; disclaimers do not grant third-party rights or publication approval.

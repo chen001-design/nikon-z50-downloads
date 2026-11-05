@@ -1,21 +1,63 @@
 {
-  "schema": "r10.1-preserved-validation-v1",
-  "windows_sha256": "5f28a65e5655a55bd7d5139ea333a1c3450d78f56bc0384b3958d7447e725870",
-  "audio_assertions_passed": 375,
-  "golden_cases_byte_equal": 40,
-  "historical_PCM_hashes_equal": 24,
-  "complete_M5_byte_equal": true,
-  "source_tests": {
-    "total": 58,
-    "passed": 56,
-    "optional_host_integration_skipped": 2,
-    "failed": 0
+  "schema": "z50-r5-scoped-local-validation-v1",
+  "toolkit": "m5-battery-cache-r5-toolkit1",
+  "runtime_sha256": "215275d7cccdc3941c295a127ec76b8fc35410665f77ffe02b922f536a3e800c",
+  "sources_sha256": "333b6c15089d1c9e554815a6d8cb8bd6544ef0d337862b2c5fb1f4623a0f8fdd",
+  "actual_final_EXE_full_builds": [
+    {
+      "profile": "default",
+      "bytes": 31665490,
+      "sha256": "eb33fab29b6ba337484961a852dd3a634f8c9573ac1b6631f1e20f692accd318",
+      "full_byte_equal": true
+    },
+    {
+      "profile": "m5-only",
+      "bytes": 31665490,
+      "sha256": "09f539c078676509db12f759a4a9e2fe1516b7455e031635fd60bb677876d03e",
+      "full_byte_equal": true
+    }
+  ],
+  "final_EXE_sha256": "2e656f7e2f8e3728a935f0bea0c60066fd711d189c1f056dcf29d483b27ac178",
+  "audio": {
+    "actual_formats": [
+      "wav",
+      "mp3",
+      "aac",
+      "m4a"
+    ],
+    "actual_slots": [
+      1,
+      8
+    ],
+    "SND_and_preview_equal_to_accepted_backend": true,
+    "packaged_shared_GUI_backend": true,
+    "unchanged_Sound_runtime_members": 927
   },
-  "user_manual_confirmation": "r10.1 界面和试听全部通过",
-  "scope": "Inherited accepted evidence for unchanged r10.1 bytes; not new product execution in download-repository preparation.",
+  "launcher_prerequisite_and_denial_process_cases": 21,
+  "full_corresponding_source": {
+    "files": 663,
+    "project_files": 468,
+    "FFmpeg_inner_members": 120,
+    "python_archives": 13,
+    "build_wheels": 7,
+    "original_notices": 168,
+    "full_Zig_bootstrap": true,
+    "public_Runtime_and_Sources_input_replay": true
+  },
+  "runtime_budget": {
+    "bytes": 97472093,
+    "uncompressed_bytes": 296720767,
+    "files": 3768,
+    "passed": true
+  },
+  "prior_user_feedback": "r5 firmware regeneration reported successful; device, exact-hash and complete test-matrix scope were not specified",
+  "original_M5_preserved": true,
+  "firmware_logic_changed_by_this_packaging": false,
+  "GUI_screen_clicked": false,
+  "new_camera_or_physical_card_tested": false,
   "other_Windows_machine_tested": false,
-  "new_camera_or_storage_card_tested": false,
-  "extra_cold_rebuild_executed": false,
-  "known_stress_case_status": "CA-M5-STRESS-01 remains unresolved; not retested",
-  "legal_clearance_claimed": false
+  "physical_audio_or_voltage_calibration": false,
+  "stress_case": "CA-M5-STRESS-01 unresolved; not retested",
+  "recovery_or_rights_or_publication_clearance": false,
+  "scope": "Actual final ZIP EXE builds, shared audio backend, source delivery and denial branches. Preserved GUI code is distinguished from screen interaction. Targeted checks do not repeat or replace every historical test."
 }

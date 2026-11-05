@@ -1,9 +1,11 @@
 # 原许可文本与适用范围
 
-本目录是便于阅读的精选副本，不是 Windows 包内全部第三方通知的替代品。`ORIGINS.json`给出每份原件的路径、大小、SHA256；`../COPYING/`中的MIT/GPL全文也原字节复制。完整许可树、源码内逐文件条款与实际构建配置仍随完整Windows包和对应源码提供，见[供源说明](../SOURCE-DELIVERY.md)。
+本目录是精选原件的阅读入口，不是运行包及完整 Sources 内全部原通知的替代品。`ORIGINS.json` 记录每份原件的历史路径、大小和 SHA-256；`COPYING/` 中的 MIT/GPL 全文也保留原字节。当前两附件的完整许可树、逐文件条款和供源位置见 [供源说明](../SOURCE-DELIVERY.md)；总体范围见 [LICENSE-SCOPE](../LICENSE-SCOPE.md)。
 
-`Builder-original-LICENSE.txt`、`SoundTool-original-LICENSE.txt`是原组件版本的许可声明。其“source-only candidate”、相对文档路径和旧工程引用属于当时的源树/准备快照，不描述这个新下载仓库的状态，也不是用户需要访问私有仓库的前提。本仓库的新说明不改变原许可文本或其中的保留权利。
+`Builder-original-LICENSE.txt`、`SoundTool-original-LICENSE.txt` 和根 LICENSE 保留原声明。其 r10.1、source-only candidate、旧源档名、相对路径及工程引用属于当时源树/交付快照，不是新 r5 的运行步骤，也不要求用户访问私人旧包或私有仓库。本页更新位置说明，不改原许可、版权、保留权利或 `ORIGINS.json`。
 
-FFmpeg原LICENSE列出可能配置的许可选项；当前014构建的实际开关、链接对象、完整原条款及源档，以源包内`BINARY-SOURCE-MAP.json`、构建控制和`licenses/`为准。精选LGPL全文不能替代这些材料，也不把同包Builder的GPL义务改成LGPL。Python原Windows许可同样不能简单归为“全部MIT”。
+本版 `Z50-Lab-Windows-Tools-r5.zip` 只保留两工具运行/构建所需文件、必要原许可与说明；大型源材料集中在同版 `Z50-Lab-Sources-r5.zip`。Sources 的 `third-party/notices/` 保存完整组件来源/许可材料；其中保留的旧相对路径是来源记录，当前位置以 Sources 根 `SOURCE-COMPONENTS.json` 和 `SOURCE-FILES.json` 为准。
 
-新增文档的有限MIT授权见[根LICENSE](../LICENSE)。原厂固件和生成固件不随本下载包分发；项目许可不授予Nikon或其他权利人的权利。
+FFmpeg 原 LICENSE 列出多种可能配置的许可选项。当前实际开关、链接对象、构建控制及原通知，在 Sources 内唯一的 `ffmpeg/FFmpeg-Corresponding-Source.zip` 中；解压后查 `FFmpeg-selfbuild/BINARY-SOURCE-MAP.json`、构建配方与 `licenses/`。精选 LGPL 全文不能替代完整材料，也不能把 Builder 的 GPL 义务改成 LGPL。Python Windows 原许可同样不等于全部 MIT。
+
+新增合格文档表达的有限 MIT 授权见 [根 LICENSE](../LICENSE)。原厂、恢复后和修改后的完整固件不在本版附件中；项目许可不授予 Nikon 或其他权利人的权利。供源和许可阅读入口不表示新附件已公开、权利条件全部解决或安装安全。
